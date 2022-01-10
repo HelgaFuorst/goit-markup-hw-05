@@ -264,6 +264,7 @@ border-radius: 4px;
 }
 .what-position{
   position: relative;
+  z-index: 1;
 }
 .what-description{
 position: absolute;
@@ -276,7 +277,6 @@ font-size: 14px;
 line-height: 16px;
 text-align: center;
 letter-spacing: 0.03em;
-text-transform: uppercase;
 color: var(--white-color);
 background: rgba(47, 48, 58, 0.8);}
 
@@ -381,6 +381,7 @@ border-color: var(--brand-color);
 }
 /* Модальное окно №1 */
 .backdrop{
+  z-index: 2;
   position: fixed;
   top: 0;
   right: 0;
