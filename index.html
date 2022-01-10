@@ -78,7 +78,7 @@
             для вашего бизнеса
           </h1>
           <button
-            data-open-modal
+            data-modal-open
             class="banner-button text-shadow"
             type="button"
           >
@@ -87,9 +87,9 @@
         </div>
       </section>
       <!-- Модалка -->
-      <div class="backdrop is-hidden" data-backdrop>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="close-button">
+          <button data-modal-close class="close-button">
             <svg width="30" height="30" class="close-icon">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -455,5 +455,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
