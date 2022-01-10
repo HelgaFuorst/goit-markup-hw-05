@@ -140,9 +140,17 @@ button {
  bottom: -30px;
   left: 0;
 }
-
+.nav-text{
+  color: var(--main-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .nav-text:hover,
 .nav-text:focus {
+  color: var(--brand-color);
+}
+.active-page {
   color: var(--brand-color);
 }
 /* Контакты Шапки */
@@ -166,6 +174,10 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+
+  transition-property: color,fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-icon {
   width: 20px;
@@ -227,6 +239,10 @@ button {
 /* Актив кнопки */
 .text-shadow {
   color: var(--white-color);
+text-shadow: none;
+transition-property: text-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-shadow:hover,
 .text-shadow:focus {
@@ -361,13 +377,14 @@ margin-right: -10px;
   width: 44px;
   height: 44px;
   fill: var(--icon-color);
+
+  transition-property: background-color,fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,.social-link:focus{
   fill: var(--white-color);
   background-color: var(--brand-color);
-  border: 1px solid transparent;
-  border-color: var(--brand-color);
-  border-radius: 50%;
 }
 .clients-row {
   display: flex;
@@ -388,6 +405,10 @@ margin-left: 30px;
   box-sizing: border-box;
   border-radius: 4px;
   fill: var(--icon-color);
+
+   transition-property: border-color,fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-item:hover,.logo-item:focus{
 fill: var(--brand-color);
@@ -406,6 +427,7 @@ border-color: var(--brand-color);
 .is-hidden{
   opacity: 0;
   pointer-events: none;
+
 }
 
 .modal{
@@ -418,6 +440,8 @@ border-color: var(--brand-color);
   min-height: 521px;
 
   background-color: var(--white-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
 }
 .close-button{
   position: absolute;
@@ -445,6 +469,10 @@ background-color: var(--white-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-activity:hover,
 .address-activity:focus {
@@ -457,6 +485,10 @@ background-color: var(--white-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-item {
   margin-bottom: 9px;
@@ -506,6 +538,10 @@ justify-content: center;
   height: 44px;
   fill: var(--white-color);
   background-color:rgba(255, 255, 255, 0.1); ;
+
+  transition-property: background-color,fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-basement:hover,.social-link-basement:focus{
@@ -537,6 +573,10 @@ justify-content: center;
   letter-spacing: 0.03em;
   border: #f5f4fa;
   border-radius: 4px;
+
+   transition-property: background-color,box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .blue-button {
   background-color: var(--brand-color);
