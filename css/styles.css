@@ -464,7 +464,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-
+  padding: 40px 40px;
   min-width: 528px;
   min-height: 521px;
   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -494,7 +494,49 @@ button {
 .close-button:hover {
   transform: scale(1.25);
 }
+.modal-header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-name-direction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-button {
+  text-align: center;
 
+  width: 200px;
+  height: 50px;
+
+  padding: 12px 32px;
+
+  border: none;
+  border-radius: 4px;
+  background-color: var(--brand-color);
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+}
+.modal-form-button {
+  margin-right: auto;
+  margin-left: auto;
+
+  margin-top: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 /*Подвал*/
 .basment {
   background: #2f303a;
@@ -603,7 +645,6 @@ button {
 
 .button-cursor {
   padding: 6px 22px;
-  font-family: Raleway;
   background-color: #f5f4fa;
   font-style: normal;
   font-weight: 500;
